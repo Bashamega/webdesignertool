@@ -1,0 +1,75 @@
+/* Original Tailwind CSS */
+*{margin:0;border:0;}
+/* Base styles */
+/* Base styles */
+.nav {
+  background-color: #3490dc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+  padding: 0.5rem 1rem;
+}
+
+.title {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1.5rem;
+}
+
+/* Export button and submenu */
+.export-container {
+  position: relative;
+}
+
+.export-btn, .import-btn {
+  padding: 5px;
+  border-radius: 5px;
+  margin-right: 100px;
+  background-color: #ccc;
+  display: flex;
+}
+
+.export-btn:hover, .import-btn:hover{
+  background-color: #ccd0db;
+}
+
+.export-menu {
+  position: absolute;
+  top: 2rem;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-right: 50px;
+}
+
+.export-option {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s ease;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  margin-bottom: 0.25rem; /* Add margin between buttons */
+}
+
+.export-option:hover {
+  background-color: #ebf4ff;
+}
+
+/* Import input */
+.import-input {
+  margin-left: 0.5rem;
+  display: none;
+}
+
+/* Show the input when needed */
+.nav:hover .import-input {
+  display: inline-block;
+}
+.flex{
+  display: flex;
+}
